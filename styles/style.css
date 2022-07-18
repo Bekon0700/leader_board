@@ -198,3 +198,46 @@ body{
     padding: 2px 13px;
     border-radius: 25px;
 }
+
+
+/* Responsive */
+
+@media only screen and (max-width: 674px) {
+    .container{
+        width: 100%;
+
+    }    
+
+    /* nav bar */
+    .nav_container, .main_header, .course_container{
+        padding: 0.5rem;
+    }
+    .logo, .navs{
+        gap: 8px;
+    }
+    .logo_title, .links{
+        font-size: 1.5rem;
+    }
+    .logo_img{
+        width: 30.42px;
+        height: 40px;
+    }
+    .profile_pic{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .players, .courses, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+
+    .blog{
+        flex-direction: column;
+    }
+
+    .course_other_info{
+        width: 50%;
+    }
+}
